@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>RubiconeX_Serv.BusinessLogic</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RubiconeX-Serv.BusinessLogic.Core\RubiconeX-Serv.BusinessLogic.Core.csproj" />
+    <ProjectReference Include="..\RubiconeX-Serv.DataAccsess.Core\RubiconeX-Serv.DataAccsess.Core.csproj" />
+    <ProjectReference Include="..\RubiconeX-Serv.DataAccsess\RubiconeX-Serv.DataAccsess.csproj" />
+  </ItemGroup>
+
+</Project>

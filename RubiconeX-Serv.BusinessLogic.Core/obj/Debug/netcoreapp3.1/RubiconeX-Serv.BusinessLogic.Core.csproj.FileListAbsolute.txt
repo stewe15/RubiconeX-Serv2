@@ -1,0 +1,9 @@
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\bin\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.deps.json
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\bin\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.dll
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\bin\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.pdb
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.csprojAssemblyReference.cache
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.AssemblyInfoInputs.cache
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.AssemblyInfo.cs
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.csproj.CoreCompileInputs.cache
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.dll
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic.Core\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.Core.pdb

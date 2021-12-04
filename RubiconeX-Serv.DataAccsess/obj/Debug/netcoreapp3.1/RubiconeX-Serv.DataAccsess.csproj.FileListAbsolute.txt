@@ -1,0 +1,5 @@
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.DataAccsess\bin\Debug\netcoreapp3.1\RubiconeX-Serv.DataAccsess.deps.json
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.DataAccsess\bin\Debug\netcoreapp3.1\RubiconeX-Serv.DataAccsess.dll
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.DataAccsess\obj\Debug\netcoreapp3.1\RubiconeX-Serv.DataAccsess.csprojAssemblyReference.cache
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.DataAccsess\obj\Debug\netcoreapp3.1\RubiconeX-Serv.DataAccsess.AssemblyInfoInputs.cache
+C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.DataAccsess\obj\Debug\netcoreapp3.1\RubiconeX-Serv.DataAccsess.AssemblyInfo.cs
