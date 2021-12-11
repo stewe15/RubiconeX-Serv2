@@ -1,0 +1,9 @@
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\bin\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.deps.json
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\bin\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.dll
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\bin\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.pdb
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\obj\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.csprojAssemblyReference.cache
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\obj\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.AssemblyInfoInputs.cache
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\obj\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.AssemblyInfo.cs
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\obj\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.csproj.CoreCompileInputs.cache
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\obj\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.dll
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.Shared\obj\Debug\netcoreapp3.1\RubiconeX-Serv.Shared.pdb

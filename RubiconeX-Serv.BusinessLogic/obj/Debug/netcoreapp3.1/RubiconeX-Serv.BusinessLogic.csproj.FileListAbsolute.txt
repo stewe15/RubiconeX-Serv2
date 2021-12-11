@@ -3,3 +3,7 @@ C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debu
 C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.AssemblyInfoInputs.cache
 C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.AssemblyInfo.cs
 C:\Users\StudentDev\Desktop\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.AssemblyInfo.cs
+C:\Users\StudentDev\Documents\GitHub\RubiconeX-Serv\RubiconeX-Serv.BusinessLogic\obj\Debug\netcoreapp3.1\RubiconeX-Serv.BusinessLogic.csproj.CoreCompileInputs.cache

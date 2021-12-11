@@ -32,4 +32,4 @@ namespace RubiconeX_Serv.DataAccsess.Core.Models
         }
     }
 }
-}
+

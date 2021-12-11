@@ -1,12 +1,15 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using RubiconeX_Serv.BusinessLogic.Core.Interfaces;
 using RubiconeX_Serv.BusinessLogic.Core.Models;
 using RubiconeX_Serv.DataAccsess.Core.Interfaces.Context;
 using RubiconeX_Serv.DataAccsess.Core.Models;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using RubiconeX_Serv.Shared.Exception;
 
 namespace RubiconeX_Serv.BusinessLogic.Services
 {
@@ -20,32 +23,78 @@ namespace RubiconeX_Serv.BusinessLogic.Services
             _mapper = mapper;
             _context = context;
         }
+        /// <summary>
+        /// This method is autorisation method it requer phonenumber and etc also it is returns user in dataformat UserinformationBlo
+        /// </summary>
+        /// <param name="phoneNumberPreFix"></param>
+        /// <param name="phoneNumber"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
 
-        public Task<UserInformationBlo> Auth(int phoneNumberPreFix, int phoneNumber, string password)
+        public async Task<UserInformationBlo> Auth(int phoneNumberPreFix, int phoneNumber, string password)
         {
-            throw new NotImplementedException();
+           UserRto user = await  _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPreFix == phoneNumberPreFix && x.PhoneNumber == phoneNumber && x.Password == password);
+            if (user == null)
+                throw new NotFoundExeption("incorrect pasword or login");
+
+           return await ConvertToUserInformationBlo(user);
+
         }
 
-        public Task<bool> DoesExist(int phoneNumberPreFix, int phoneNumber)
+        public async Task<bool> DoesExist(int phoneNumberPreFix, int phoneNumber)
         {
-            throw new NotImplementedException();
+           return await _context.Users.AnyAsync(x => x.PhoneNumberPreFix == phoneNumberPreFix && x.PhoneNumber == phoneNumber);
+        }
+        /// <summary>
+        /// This metod is trying to find User to return it to website
+        /// 
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <returns>it returns user in dataformat UserInformationBlo </returns>
+        public async Task<UserInformationBlo> Get(int UserId)
+        {
+            UserRto user = await _context.Users.FirstOrDefaultAsync(x => x.Id == UserId);
+            if(user == null)
+                throw new NotFoundExeption("Пользователь не найден");
+
+            return await ConvertToUserInformationBlo(user);
         }
 
-        public Task<UserInformationBlo> Get(int UserId)
+        public async Task<UserInformationBlo> Registration(int phoneNumberPreFix, int phoneNumber, string password)
         {
-            throw new NotImplementedException();
+            UserRto newUser = new UserRto() {PhoneNumberPreFix = phoneNumberPreFix, PhoneNumber = phoneNumber};
+            
+            _context.Users.Add(newUser);
+            
+            await _context.SaveChangesAsync();
+
+            return await ConvertToUserInformationBlo(newUser);
         }
 
-        public Task<UserInformationBlo> Registration(int phoneNumberPreFix, int phoneNumber, string password)
+        public async Task<UserInformationBlo> Update(int phoneNumberPreFix, int phoneNumber, string password, UserUpdateBlo userUpdateBlo)
         {
-            throw new NotImplementedException();
+         UserRto userUpdate = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPreFix == phoneNumberPreFix && x.PhoneNumber == phoneNumber && x.Password == password);
+            if (userUpdate == null)
+                throw new NotFoundExeption("Пользователь не найден");
+            if (userUpdateBlo.IsBoy != null)userUpdate.IsBoy =  userUpdateBlo.IsBoy;
+            if (userUpdateBlo.FirstName != null) userUpdate.FirstName = userUpdateBlo.FirstName;
+            if (userUpdateBlo.LastName != null) userUpdate.LastName = userUpdateBlo.LastName;
+            if (userUpdateBlo.Patronumic != null) userUpdate.Patronumic = userUpdateBlo.Patronumic;
+            if (userUpdateBlo.Password != null) userUpdate.Password = userUpdateBlo.Password;
+            if (userUpdateBlo.AvatarUrl != null) userUpdate.AvatarUrl = userUpdateBlo.AvatarUrl;
+            if (userUpdateBlo.Patronumic != null) userUpdate.Patronumic = userUpdateBlo.Patronumic;
+            if (userUpdateBlo.Introdution != null) userUpdate.Introdution = userUpdateBlo.Introdution;
+            if (userUpdateBlo.Birthday != null) userUpdate.Birthday = userUpdateBlo.Birthday;
+            await _context.SaveChangesAsync();
+            return await ConvertToUserInformationBlo(userUpdate);
+
         }
 
-        public Task<UserInformationBlo> Update(int phoneNumberPreFix, int phoneNumber, string password, UserUpdateBlo userUpdateBlo)
-        {
-            throw new NotImplementedException();
-        }
-
+        /// <summary>
+        /// Конертирует из UserInformationBlo to UserRto
+        /// </summary>
+        /// <param name="userRto"></param>
+        /// <returns>возвращает обект UserRto</returns>
         private async Task<UserInformationBlo> ConvertToUserInformationBlo(UserRto userRto)
         {
 
@@ -58,3 +107,6 @@ namespace RubiconeX_Serv.BusinessLogic.Services
         }
     }
 }
+
+
+

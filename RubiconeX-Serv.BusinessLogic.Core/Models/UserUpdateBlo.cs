@@ -12,6 +12,7 @@ namespace RubiconeX_Serv.BusinessLogic.Core.Models
         public string Patronumic { get; set; }
         public string AvatarUrl { get; set; }
         public string Introdution { get; set; }
+        public string Password { get; set; }
         public bool IsBoy { get; set; }
         public DateTimeOffset Birthday { get; set; }
     }
