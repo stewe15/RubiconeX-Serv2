@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "+qoekkPPv/OlggOyqNey8KvtSD2p6j0dhSVLMnBu5gG3DL7uenS9vREoRSOwuprFJCLg5vdv27p08sWgGnK0vA==",
+  "dgSpecHash": "za5+w9COwTNKzJfq0RG/Ce4Iv1EFowVjHrSUpekiDKa365unhIoUnMBkEPNaO6/+GUEk8yNsxiNou1W/7z8+sg==",
   "success": true,
   "projectFilePath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv2\\RubiconeX-Serv.DataAccsess\\RubiconeX-Serv.DataAccsess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.20\\microsoft.entityframeworkcore.3.1.20.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.20\\microsoft.entityframeworkcore.abstractions.3.1.20.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.20\\microsoft.entityframeworkcore.analyzers.3.1.20.nupkg.sha512",
+    "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.20\\microsoft.entityframeworkcore.design.3.1.20.nupkg.sha512",
+    "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.20\\microsoft.entityframeworkcore.relational.3.1.20.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.20\\microsoft.extensions.caching.abstractions.3.1.20.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.20\\microsoft.extensions.caching.memory.3.1.20.nupkg.sha512",
     "C:\\Users\\StudentDev\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.20\\microsoft.extensions.configuration.3.1.20.nupkg.sha512",

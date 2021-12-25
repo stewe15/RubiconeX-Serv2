@@ -15,6 +15,20 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/8.1.1": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[10.1.1, 11.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0",
+          "Microsoft.Extensions.Options": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -469,6 +483,23 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "RubiconeX-Serv.BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AutoMapper": "10.1.1",
+          "RubiconeX-Serv.BusinessLogic.Core": "1.0.0",
+          "RubiconeX-Serv.DataAccsess": "1.0.0",
+          "RubiconeX-Serv.DataAccsess.Core": "1.0.0",
+          "RubiconeX-Serv.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RubiconeX-Serv.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RubiconeX-Serv.BusinessLogic.dll": {}
+        }
+      },
       "RubiconeX-Serv.BusinessLogic.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -488,6 +519,43 @@
         "runtime": {
           "bin/placeholder/RubiconeX-Serv.Core.dll": {}
         }
+      },
+      "RubiconeX-Serv.DataAccsess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.20",
+          "RubiconeX-Serv.DataAccsess.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RubiconeX-Serv.DataAccsess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RubiconeX-Serv.DataAccsess.dll": {}
+        }
+      },
+      "RubiconeX-Serv.DataAccsess.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.20"
+        },
+        "compile": {
+          "bin/placeholder/RubiconeX-Serv.DataAccsess.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RubiconeX-Serv.DataAccsess.Core.dll": {}
+        }
+      },
+      "RubiconeX-Serv.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/RubiconeX-Serv.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RubiconeX-Serv.Shared.dll": {}
+        }
       }
     }
   },
@@ -506,6 +574,19 @@
         "lib/net461/AutoMapper.xml",
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/8.1.1": {
+      "sha512": "xSWoVzOipuDU4PeZcUfaZQ+xqXU8QmGv5jrdlxt3MYm9xaOmrefqcfzGQ3SQ+D+8wfBa/ZwSuL0qKOVj080inA==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/8.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -1296,6 +1377,11 @@
         "version.txt"
       ]
     },
+    "RubiconeX-Serv.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../RubiconeX-Serv.BusinessLogic/RubiconeX-Serv.BusinessLogic.csproj",
+      "msbuildProject": "../RubiconeX-Serv.BusinessLogic/RubiconeX-Serv.BusinessLogic.csproj"
+    },
     "RubiconeX-Serv.BusinessLogic.Core/1.0.0": {
       "type": "project",
       "path": "../RubiconeX-Serv.BusinessLogic.Core/RubiconeX-Serv.BusinessLogic.Core.csproj",
@@ -1305,14 +1391,31 @@
       "type": "project",
       "path": "../RubiconeX-Serv.Core/RubiconeX-Serv.Core.csproj",
       "msbuildProject": "../RubiconeX-Serv.Core/RubiconeX-Serv.Core.csproj"
+    },
+    "RubiconeX-Serv.DataAccsess/1.0.0": {
+      "type": "project",
+      "path": "../RubiconeX-Serv.DataAccsess/RubiconeX-Serv.DataAccsess.csproj",
+      "msbuildProject": "../RubiconeX-Serv.DataAccsess/RubiconeX-Serv.DataAccsess.csproj"
+    },
+    "RubiconeX-Serv.DataAccsess.Core/1.0.0": {
+      "type": "project",
+      "path": "../RubiconeX-Serv.DataAccsess.Core/RubiconeX-Serv.DataAccsess.Core.csproj",
+      "msbuildProject": "../RubiconeX-Serv.DataAccsess.Core/RubiconeX-Serv.DataAccsess.Core.csproj"
+    },
+    "RubiconeX-Serv.Shared/1.0.0": {
+      "type": "project",
+      "path": "../RubiconeX-Serv.Shared/RubiconeX-Serv.Shared.csproj",
+      "msbuildProject": "../RubiconeX-Serv.Shared/RubiconeX-Serv.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 10.1.1",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.22",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.22",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.22",
+      "RubiconeX-Serv.BusinessLogic >= 1.0.0",
       "RubiconeX-Serv.BusinessLogic.Core >= 1.0.0",
       "RubiconeX-Serv.Core >= 1.0.0"
     ]
@@ -1351,6 +1454,9 @@
             "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj": {
               "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic.Core\\RubiconeX-Serv.BusinessLogic.Core.csproj"
             },
+            "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv2\\RubiconeX-Serv.BusinessLogic\\RubiconeX-Serv.BusinessLogic.csproj"
+            },
             "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv2\\RubiconeX-Serv.Core\\RubiconeX-Serv.Core.csproj": {
               "projectPath": "C:\\Users\\StudentDev\\Documents\\GitHub\\RubiconeX-Serv2\\RubiconeX-Serv.Core\\RubiconeX-Serv.Core.csproj"
             }
@@ -1369,6 +1475,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[10.1.1, )"
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[8.1.1, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
