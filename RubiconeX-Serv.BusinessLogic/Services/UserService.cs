@@ -17,7 +17,7 @@ namespace RubiconeX_Serv.BusinessLogic.Services
     {
         private readonly IMapper _mapper;
         private readonly IRubiconeX_ServContext _context;
-
+                                                                                   
         public UserService(IMapper mapper, IRubiconeX_ServContext context)
         {
             _mapper = mapper;
@@ -76,9 +76,9 @@ namespace RubiconeX_Serv.BusinessLogic.Services
          UserRto userUpdate = await _context.Users.FirstOrDefaultAsync(x => x.PhoneNumberPreFix == phoneNumberPreFix && x.PhoneNumber == phoneNumber && x.Password == password);
             if (userUpdate == null)
                 throw new NotFoundExeption("Пользователь не найден");
-            if (userUpdateBlo.IsBoy != null)userUpdate.IsBoy =  userUpdateBlo.IsBoy;
+            if (userUpdateBlo.IsBoy   != null)userUpdate.IsBoy =  userUpdateBlo.IsBoy;
             if (userUpdateBlo.FirstName != null) userUpdate.FirstName = userUpdateBlo.FirstName;
-            if (userUpdateBlo.LastName != null) userUpdate.LastName = userUpdateBlo.LastName;
+            if (userUpdateBlo.LastName  != null) userUpdate.LastName = userUpdateBlo.LastName;
             if (userUpdateBlo.Patronumic != null) userUpdate.Patronumic = userUpdateBlo.Patronumic;
             if (userUpdateBlo.Password != null) userUpdate.Password = userUpdateBlo.Password;
             if (userUpdateBlo.AvatarUrl != null) userUpdate.AvatarUrl = userUpdateBlo.AvatarUrl;

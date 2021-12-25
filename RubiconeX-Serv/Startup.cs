@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
+
 namespace RubiconeX_Serv
 {
     public class Startup
@@ -26,6 +27,8 @@ namespace RubiconeX_Serv
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,8 +38,6 @@ namespace RubiconeX_Serv
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 
